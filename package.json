@@ -1,0 +1,19 @@
+{
+  "name": "parent-element",
+  "version": "1.0.0",
+  "description": "Find parent element matching a callback",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaspernj/parent-element.git"
+  },
+  "author": "k@spernj.org",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kaspernj/parent-element/issues"
+  },
+  "homepage": "https://github.com/kaspernj/parent-element#readme"
+}
