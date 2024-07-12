@@ -30,7 +30,9 @@ const parentElements = ({element, breakAfterFirstFound, callback, currentPath = 
 
     results.push(elementResult)
 
-    if (breakAfterFirstFound) return
+    if (breakAfterFirstFound) {
+      return results
+    }
   }
 
   if (parent?.parentNode && (!breakAfterFirstFound || results.length == 0)) {
@@ -46,7 +48,7 @@ const parentElements = ({element, breakAfterFirstFound, callback, currentPath = 
   return results
 }
 
-module.exports = {
+export {
   parentElement,
   parentElements
 }
