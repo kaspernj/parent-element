@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/kaspernj/parent-element#readme",
   "devDependencies": {
-    "jasmine": "^5.1.0"
+    "jasmine": "^6.0.0"
   }
 }
