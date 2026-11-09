@@ -1,0 +1,11 @@
+before_script:
+  - npm install
+script:
+  - npm test
+# One lane runs the whole repository (`npm install` + jasmine over spec/), so nothing
+# in this tree can be isolated from it. Only CI metadata is carved out: the npm/jasmine
+# lane never reads .github/. Everything else - source, specs, manifest, lockfile - keeps
+# the lane running, and a change to this file always runs every build.
+paths:
+  - "**"
+  - "!.github/**"
